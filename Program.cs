@@ -22,7 +22,17 @@ namespace InterviewCakeConsoleApp
             {
                 Console.Write("{0} ", i);
             }
-            
+            List<Meeting> meetings = new List<Meeting>
+            {
+                new Meeting(0,1),
+                new Meeting(3,5),
+                new Meeting(4,8),
+                new Meeting(10,12),
+                new Meeting(9,10)
+            };
+            Meeting.MergeRanges(meetings);
+
+
         }
     }
 }

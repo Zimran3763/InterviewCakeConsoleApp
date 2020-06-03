@@ -61,6 +61,11 @@ namespace InterviewCakeConsoleApp
             Console.WriteLine(v);
             #endregion
 
+            #region Reverse String In Place
+            char[] actualArray = new char[]{ 'A', 'B', 'C', 'D', 'E' } ;
+            ReverseStringInPlace.Reverse(actualArray);
+            #endregion
+
         }
     }
 }

@@ -11,10 +11,13 @@ namespace InterviewCakeConsoleApp
    
         public static void Main(string[] args)
         {
+            #region Top Score
             int[] unorderedScores = new [] { 2, 6, 3,6, 1,6,2 };
             int highestPossibleScore = 10;
             TopScore.SortScores(unorderedScores,highestPossibleScore);
+            #endregion
 
+            #region Merge Sorted Arrays
             int[] array1 = { 3, 4, 6, 10, 11, 15 };
             int[] array2 = { 1, 5, 8, 12, 14, 19 };
             var arrayResult =  MergeSortedArrays.MergeArrays(array1, array2);
@@ -22,6 +25,10 @@ namespace InterviewCakeConsoleApp
             {
                 Console.Write("{0} ", i);
             }
+            Console.WriteLine();
+            #endregion
+
+            #region Merge Meetings
             List<Meeting> meetings = new List<Meeting>
             {
                 new Meeting(0,1),
@@ -31,7 +38,28 @@ namespace InterviewCakeConsoleApp
                 new Meeting(9,10)
             };
             Meeting.MergeRanges(meetings);
+            #endregion
 
+            #region Cafe Order Checker
+            //int[] takeOutOrders = new[] {1,3,5 };
+            //int[] dineInOrders = new[] { 2, 4, 6 };
+            //int[] servedOrders = new[] { 1, 2, 4, 6, 5, 3 };
+
+            //int[] takeOutOrders = new[] { 17, 8, 24 };
+            //int[] dineInOrders = new[] { 12, 19, 2 };
+            //int[] servedOrders = new[] { 17, 8, 12, 19, 24, 2 };
+
+            //int[] takeOutOrders = new[] {0};
+            //int[] dineInOrders = new[] { 12, 19, 2 };
+            //int[] servedOrders = new[] { 12, 19, 2 };
+
+            var takeOutOrders = new int[] { 1, 9 };
+            var dineInOrders = new int[] { 7, 8 };
+            var servedOrders = new int[] { 1, 7, 8 };
+
+            string v = CafeOrderChecker.CafeOrder(takeOutOrders, dineInOrders, servedOrders);
+            Console.WriteLine(v);
+            #endregion
 
         }
     }

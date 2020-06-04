@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HashingAndHashTables;
 
 namespace InterviewCakeConsoleApp
 {
@@ -73,6 +74,11 @@ namespace InterviewCakeConsoleApp
             ReverseWords.ReverseWord(message);
             #endregion
 
+            #region Inflight Entertainment
+            int[] movieLength = new int[] { 1, 2, 3, 4, 5, 6 };
+            int flightLength = 7;
+            InflightEntertainment.CanTwoMoviesFillFlight(movieLength,flightLength);
+            #endregion
         }
     }
 }

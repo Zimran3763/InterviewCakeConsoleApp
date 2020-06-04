@@ -55,5 +55,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hashing and hash tables\HashingAndHashTables.csproj">
+      <Project>{dbdc293c-0b00-43c8-80d3-bad0774d3d98}</Project>
+      <Name>HashingAndHashTables</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

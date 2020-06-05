@@ -79,6 +79,9 @@ namespace InterviewCakeConsoleApp
             int flightLength = 7;
             InflightEntertainment.CanTwoMoviesFillFlight(movieLength,flightLength);
             #endregion
+            #region Permutation Palindrome
+            var result =  PermutationPalindrome.HasPalindromePermutation("aabcbcd");
+            #endregion
         }
     }
 }

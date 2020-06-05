@@ -46,6 +46,7 @@
     <Compile Include="CafeOrderChecker.cs" />
     <Compile Include="MergeMeetings.cs" />
     <Compile Include="MergeSortedArrays.cs" />
+    <Compile Include="PermutationPalindrome.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReverseStringInPlace.cs" />

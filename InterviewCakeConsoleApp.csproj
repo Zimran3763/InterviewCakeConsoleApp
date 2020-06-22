@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppleStocks.cs" />
     <Compile Include="CafeOrderChecker.cs" />
     <Compile Include="MergeMeetings.cs" />
     <Compile Include="MergeSortedArrays.cs" />
@@ -52,6 +53,7 @@
     <Compile Include="ReverseStringInPlace.cs" />
     <Compile Include="ReverseWords.cs" />
     <Compile Include="TopScore.cs" />
+    <Compile Include="WordCloudData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

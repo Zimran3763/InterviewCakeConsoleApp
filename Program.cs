@@ -82,6 +82,15 @@ namespace InterviewCakeConsoleApp
             #region Permutation Palindrome
             var result =  PermutationPalindrome.HasPalindromePermutation("aabcbcd");
             #endregion
+            var text = "Dessert - mille-feuille cake? Allie's Bakery: Sasha's Cakes decisions..dessert dessert Yum!";
+            //WordCloudData.GetWords(text).ForEach(Console.WriteLine);
+            //Console.WriteLine(String.Join(" ", WordCloudData.GetWords(text)));
+            WordCloudData wordCloudData = new WordCloudData(text);
+            #region word cloud data
+
+            #endregion
+
+       
         }
     }
 }

@@ -8,29 +8,47 @@ namespace InterviewCakeConsoleApp
 {
     public class AppleStocks
     {
-        //Brute Force
+        
         public static int GetMaxProfit(int[] stockPrices)
         {
-            // Calculate the max profit
-            if (stockPrices.Length < 1)
-                throw new System.ArgumentException("Array cannot be null less than 1");
+            #region //Brute Force
+            //if(stockPrices.Length < 2  )
+            //   throw new System.ArgumentException("Parameter cannot be null", "original");
 
-            if (stockPrices.Length == 1)
-                throw new System.ArgumentException("We need atleast two values");
+            //if (stockPrices.Length == 1)
+            //    throw new System.ArgumentException("We need atleast two values");
 
-            int maxProfit = stockPrices[1] - stockPrices[0];
+            //int maxProfit = stockPrices[1] - stockPrices[0];
 
-            for (int buyPrice = 0; buyPrice < stockPrices.Length - 1; buyPrice++)
-            {
-                for (int salePrice = buyPrice + 1; salePrice < stockPrices.Length; salePrice++)
+            //for (int buyPrice = 0; buyPrice < stockPrices.Length - 1; buyPrice++)
+            //{
+            //    for (int salePrice = buyPrice + 1; salePrice < stockPrices.Length; salePrice++)
+            //    {
+
+            //        int currenProfit = stockPrices[salePrice] - stockPrices[buyPrice];
+
+            //        maxProfit = Math.Max(maxProfit, currenProfit);
+            //    }
+            //}
+            //return maxProfit;
+            #endregion
+            #region optimize solution with one pass greedy algo
+                if (stockPrices.Length < 2)
+                    throw new System.ArgumentException("Need Two prices atleast two prices");
+
+                int minValue = stockPrices[0];
+                int maxProfit = stockPrices[1] - stockPrices[0];
+
+                for (int currentValue = 1; currentValue < stockPrices.Length; currentValue++)
                 {
-
-                    int currenProfit = stockPrices[salePrice] - stockPrices[buyPrice];
+                    int currenProfit = stockPrices[currentValue] - minValue;
 
                     maxProfit = Math.Max(maxProfit, currenProfit);
+
+                    minValue = Math.Min(stockPrices[currentValue], minValue);
                 }
-            }
-            return maxProfit;
+                return maxProfit;
+            #endregion
         }
     }
 }

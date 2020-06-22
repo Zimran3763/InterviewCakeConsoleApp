@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AppleStocks.cs" />
     <Compile Include="CafeOrderChecker.cs" />
+    <Compile Include="HighestProductOf3.cs" />
     <Compile Include="MergeMeetings.cs" />
     <Compile Include="MergeSortedArrays.cs" />
     <Compile Include="PermutationPalindrome.cs" />

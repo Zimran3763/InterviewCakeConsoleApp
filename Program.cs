@@ -95,7 +95,10 @@ namespace InterviewCakeConsoleApp
 
             string[] words = new string[] { "ptolemaic", "retrograde", "supplant", "undulate", "xenoepist",
             "asymptote", "babka", "banoffee", "engender", "karpatka", "othellolagkage" };
-            FindRotationPont.FindRotationPointIndex( words);
+            FindRotationPont.FindRotationPoint( words);
+
+            var numbers = new int[] { 4, 1, 4, 8, 3, 2, 7, 6, 5 };
+            FindRepeatSpaceEdition.FindRepeat(numbers);
 
 
         }

@@ -93,6 +93,10 @@ namespace InterviewCakeConsoleApp
             int[] originalArray = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             InPlaceShuffle.Shuffle(originalArray);
 
+            string[] words = new string[] { "ptolemaic", "retrograde", "supplant", "undulate", "xenoepist",
+            "asymptote", "babka", "banoffee", "engender", "karpatka", "othellolagkage" };
+            FindRotationPont.FindRotationPointIndex( words);
+
 
         }
     }

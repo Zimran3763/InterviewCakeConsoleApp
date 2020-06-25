@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppleStocks.cs" />
+    <Compile Include="BinaryTreeNode.cs" />
     <Compile Include="CafeOrderChecker.cs" />
     <Compile Include="FindRepeatSpaceEdition.cs" />
     <Compile Include="FindRotationPont.cs" />
@@ -51,6 +52,7 @@
     <Compile Include="InPlaceShuffle.cs" />
     <Compile Include="MergeMeetings.cs" />
     <Compile Include="MergeSortedArrays.cs" />
+    <Compile Include="NodeDepthPair.cs" />
     <Compile Include="PermutationPalindrome.cs" />
     <Compile Include="ProductOfAllOtherNumbers.cs" />
     <Compile Include="Program.cs" />

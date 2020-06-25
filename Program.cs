@@ -100,6 +100,15 @@ namespace InterviewCakeConsoleApp
             var numbers = new int[] { 4, 1, 4, 8, 3, 2, 7, 6, 5 };
             FindRepeatSpaceEdition.FindRepeat(numbers);
 
+            var root = new BinaryTreeNode(5);
+            var a = root.InsertLeft(8);
+            var b = root.InsertRight(6);
+            a.InsertLeft(1);
+            a.InsertRight(2);
+            b.InsertLeft(3);
+            b.InsertRight(4);
+            var resultBalanced = NodeDepthPair.IsBalanced(root);
+
 
         }
     }

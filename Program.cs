@@ -9,19 +9,19 @@ namespace InterviewCakeConsoleApp
 {
     public class Program
     {
-   
+
         public static void Main(string[] args)
         {
             #region Top Score
-            int[] unorderedScores = new [] { 2, 6, 3,6, 1,6,2 };
+            int[] unorderedScores = new[] { 2, 6, 3, 6, 1, 6, 2 };
             int highestPossibleScore = 10;
-            TopScore.SortScores(unorderedScores,highestPossibleScore);
+            TopScore.SortScores(unorderedScores, highestPossibleScore);
             #endregion
 
             #region Merge Sorted Arrays
             int[] array1 = { 3, 4, 6, 10, 11, 15 };
             int[] array2 = { 1, 5, 8, 12, 14, 19 };
-            var arrayResult =  MergeSortedArrays.MergeArrays(array1, array2);
+            var arrayResult = MergeSortedArrays.MergeArrays(array1, array2);
             foreach (var i in arrayResult)
             {
                 Console.Write("{0} ", i);
@@ -63,7 +63,7 @@ namespace InterviewCakeConsoleApp
             #endregion
 
             #region Reverse String In Place
-            char[] actualArray = new char[]{ 'A', 'B', 'C', 'D', 'E' } ;
+            char[] actualArray = new char[] { 'A', 'B', 'C', 'D', 'E' };
             ReverseStringInPlace.Reverse(actualArray);
             #endregion
 
@@ -77,10 +77,10 @@ namespace InterviewCakeConsoleApp
             #region Inflight Entertainment
             int[] movieLength = new int[] { 1, 2, 3, 4, 5, 6 };
             int flightLength = 7;
-            InflightEntertainment.CanTwoMoviesFillFlight(movieLength,flightLength);
+            InflightEntertainment.CanTwoMoviesFillFlight(movieLength, flightLength);
             #endregion
             #region Permutation Palindrome
-            var result =  PermutationPalindrome.HasPalindromePermutation("aabcbcd");
+            var result = PermutationPalindrome.HasPalindromePermutation("aabcbcd");
             #endregion
             var text = "Dessert - mille-feuille cake? Allie's Bakery: Sasha's Cakes decisions..dessert dessert Yum!";
             //WordCloudData.GetWords(text).ForEach(Console.WriteLine);
@@ -95,21 +95,31 @@ namespace InterviewCakeConsoleApp
 
             string[] words = new string[] { "ptolemaic", "retrograde", "supplant", "undulate", "xenoepist",
             "asymptote", "babka", "banoffee", "engender", "karpatka", "othellolagkage" };
-            FindRotationPont.FindRotationPoint( words);
+            FindRotationPont.FindRotationPoint(words);
 
             var numbers = new int[] { 4, 1, 4, 8, 3, 2, 7, 6, 5 };
             FindRepeatSpaceEdition.FindRepeat(numbers);
 
-            var root = new BinaryTreeNode(5);
-            var a = root.InsertLeft(8);
-            var b = root.InsertRight(6);
-            a.InsertLeft(1);
-            a.InsertRight(2);
-            b.InsertLeft(3);
-            b.InsertRight(4);
-            var resultBalanced = NodeDepthPair.IsBalanced(root);
+            var root = new BinaryTreeNode(1);
+            var a = root.InsertLeft(2);
+            var b = a.InsertLeft(3);
+            a.InsertRight(4);
+            b.InsertLeft(5);
+            b.InsertRight(6);
+            root.InsertRight(7).InsertRight(8).InsertRight(9).InsertRight(10);
 
+            //var root = new BinaryTreeNode(1);
+            //root.InsertRight(2).InsertRight(3).InsertRight(4);
+
+            var resultBalanced = NodeDepthPair.IsBalanced(root);
+           
+
+            Parser cd = new Parser();
+            var num = "UserName:admin;Password: super % ^&*333password;DNSName: SomeName;TimeToLive: 4;ClusterSize: 2;PortNumber: 2222;IsEnabled: true;EnsureTransaction: false;PersistentStorage: false; ";
+            cd.Parse(num);
 
         }
     }
+   
+
 }

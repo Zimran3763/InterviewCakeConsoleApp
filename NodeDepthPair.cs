@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace InterviewCakeConsoleApp
 {
+    //this is a class to store each node and it's depth
     public class NodeDepthPair
     {
-        public int Depth { get; }
+        public int Depth { get; }//need to find why we don't need set?
         public BinaryTreeNode Node { get; }
         public NodeDepthPair(BinaryTreeNode node, int depth)
         {
@@ -25,24 +26,33 @@ namespace InterviewCakeConsoleApp
                 return true;
             }
 
-            var depths = new List<int>(3);  // We short-circuit as soon as we find more than 2
+            // We short-circuit as soon as we find more than 2
+            // and return false if it's difference is >1
+            var depths = new List<int>(3);  
 
             // Nodes will store pairs of a node and the node's depth
+            //stack store last value on zero index and move previous value to index 1 because we always pop zero index value
+            //So last value should be on the zero index so we can pop it
             var nodes = new Stack<NodeDepthPair>();
             nodes.Push(new NodeDepthPair(treeRoot, 0));
 
             while (nodes.Count > 0)
             {
                 // Pop a node and its depth from the top of our stack
+                // And we are storing poped node into nodeDepthPair variable
                 var nodeDepthPair = nodes.Pop();
+                //popped node value 
                 var node = nodeDepthPair.Node;
+                //popped node depth
                 var depth = nodeDepthPair.Depth;
 
                 if (node.Left == null && node.Right == null)
                 {
                     // Case: we found a leaf
 
+
                     // We only care if it's a new depth
+                    //means depths list does not have exact depth
                     if (!depths.Contains(depth))
                     {
                         depths.Add(depth);

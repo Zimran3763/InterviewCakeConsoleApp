@@ -99,20 +99,39 @@ namespace InterviewCakeConsoleApp
 
             var numbers = new int[] { 4, 1, 4, 8, 3, 2, 7, 6, 5 };
             FindRepeatSpaceEdition.FindRepeat(numbers);
+            #region Balanced Tree
+            //var root = new BinaryTreeNode(1);
+            //var a = root.InsertLeft(2);
+            //var b = a.InsertLeft(3);
+            //a.InsertRight(4);
+            //b.InsertLeft(5);
+            //b.InsertRight(6);
+            //root.InsertRight(7).InsertRight(8).InsertRight(9).InsertRight(10);
 
-            var root = new BinaryTreeNode(1);
-            var a = root.InsertLeft(2);
-            var b = a.InsertLeft(3);
-            a.InsertRight(4);
-            b.InsertLeft(5);
-            b.InsertRight(6);
-            root.InsertRight(7).InsertRight(8).InsertRight(9).InsertRight(10);
-
+            //how this is false??
             //var root = new BinaryTreeNode(1);
             //root.InsertRight(2).InsertRight(3).InsertRight(4);
+            //var resultBalanced = NodeDepthPair.IsBalanced(root);
+            #endregion
 
-            var resultBalanced = NodeDepthPair.IsBalanced(root);
-           
+            #region BinaryTree
+            //var root = new BinaryTreeNode(50);
+            //var a = root.InsertLeft(30);
+            //a.InsertLeft(20);
+            //a.InsertRight(60);
+            //var b = root.InsertRight(80);
+            //b.InsertLeft(70);
+            //b.InsertRight(90);
+            //var resultBinary= NodeBounds.IsBinarySearchTree(root);
+            #endregion
+
+            var root = new BinaryTreeNode(50);
+            var a = root.InsertLeft(30);
+            a.InsertLeft(10);
+            a.InsertRight(40);
+            root.InsertRight(70).InsertLeft(60);
+            var actual = FindSecondLargestNode.FindSecondLargest(root);
+    
 
             Parser cd = new Parser();
             var num = "UserName:admin;Password: super % ^&*333password;DNSName: SomeName;TimeToLive: 4;ClusterSize: 2;PortNumber: 2222;IsEnabled: true;EnsureTransaction: false;PersistentStorage: false; ";

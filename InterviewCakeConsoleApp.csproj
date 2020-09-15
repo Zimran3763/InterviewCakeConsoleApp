@@ -50,6 +50,7 @@
     <Compile Include="FindRepeatSpaceEdition.cs" />
     <Compile Include="FindRotationPont.cs" />
     <Compile Include="FindSecondLargestNode.cs" />
+    <Compile Include="GraphNode.cs" />
     <Compile Include="HighestProductOf3.cs" />
     <Compile Include="InPlaceShuffle.cs" />
     <Compile Include="MergeMeetings.cs" />

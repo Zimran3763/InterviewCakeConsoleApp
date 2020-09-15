@@ -124,15 +124,39 @@ namespace InterviewCakeConsoleApp
             //b.InsertRight(90);
             //var resultBinary= NodeBounds.IsBinarySearchTree(root);
             #endregion
+            #region
+            //var root = new BinaryTreeNode(50);
+            //var a = root.InsertLeft(30);
+            //a.InsertLeft(10);
+            //a.InsertRight(40);
+            //root.InsertRight(70).InsertLeft(60);
+            //var actual = FindSecondLargestNode.FindSecondLargest(root);
+            #endregion
+            var nodeA = new GraphNode("A");
+            var nodeB = new GraphNode("B");
+            var nodeC = new GraphNode("C");
+            var nodeD = new GraphNode("D");
+            var nodeE = new GraphNode("E");
+            nodeA.AddNeighbor(nodeB);
+            nodeA.AddNeighbor(nodeC);
+            nodeB.AddNeighbor(nodeA);
+            nodeB.AddNeighbor(nodeC);
+            nodeB.AddNeighbor(nodeD);
+            nodeB.AddNeighbor(nodeE);
+            nodeC.AddNeighbor(nodeA);
+            nodeC.AddNeighbor(nodeB);
+            nodeC.AddNeighbor(nodeD);
+            nodeC.AddNeighbor(nodeE);
+            nodeD.AddNeighbor(nodeB);
+            nodeD.AddNeighbor(nodeC);
+            nodeD.AddNeighbor(nodeE);
+            nodeE.AddNeighbor(nodeB);
+            nodeE.AddNeighbor(nodeC);
+            nodeE.AddNeighbor(nodeD);
+            var graph = new GraphNode[] { nodeA, nodeB, nodeC, nodeD, nodeE };
+            //string[] colors = new string[] { "red", "green", "yellow","black" };
 
-            var root = new BinaryTreeNode(50);
-            var a = root.InsertLeft(30);
-            a.InsertLeft(10);
-            a.InsertRight(40);
-            root.InsertRight(70).InsertLeft(60);
-            var actual = FindSecondLargestNode.FindSecondLargest(root);
-    
-
+            GraphNode.ColorGraph(graph, GraphNode.GetColors());
             Parser cd = new Parser();
             var num = "UserName:admin;Password: super % ^&*333password;DNSName: SomeName;TimeToLive: 4;ClusterSize: 2;PortNumber: 2222;IsEnabled: true;EnsureTransaction: false;PersistentStorage: false; ";
             cd.Parse(num);

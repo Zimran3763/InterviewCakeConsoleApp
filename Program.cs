@@ -132,31 +132,46 @@ namespace InterviewCakeConsoleApp
             //root.InsertRight(70).InsertLeft(60);
             //var actual = FindSecondLargestNode.FindSecondLargest(root);
             #endregion
-            var nodeA = new GraphNode("A");
-            var nodeB = new GraphNode("B");
-            var nodeC = new GraphNode("C");
-            var nodeD = new GraphNode("D");
-            var nodeE = new GraphNode("E");
-            nodeA.AddNeighbor(nodeB);
-            nodeA.AddNeighbor(nodeC);
-            nodeB.AddNeighbor(nodeA);
-            nodeB.AddNeighbor(nodeC);
-            nodeB.AddNeighbor(nodeD);
-            nodeB.AddNeighbor(nodeE);
-            nodeC.AddNeighbor(nodeA);
-            nodeC.AddNeighbor(nodeB);
-            nodeC.AddNeighbor(nodeD);
-            nodeC.AddNeighbor(nodeE);
-            nodeD.AddNeighbor(nodeB);
-            nodeD.AddNeighbor(nodeC);
-            nodeD.AddNeighbor(nodeE);
-            nodeE.AddNeighbor(nodeB);
-            nodeE.AddNeighbor(nodeC);
-            nodeE.AddNeighbor(nodeD);
-            var graph = new GraphNode[] { nodeA, nodeB, nodeC, nodeD, nodeE };
-            //string[] colors = new string[] { "red", "green", "yellow","black" };
+            #region legal coloring
+            //var nodeA = new GraphNode("A");
+            //var nodeB = new GraphNode("B");
+            //var nodeC = new GraphNode("C");
+            //var nodeD = new GraphNode("D");
+            //var nodeE = new GraphNode("E");
+            //nodeA.AddNeighbor(nodeB);
+            //nodeA.AddNeighbor(nodeC);
+            //nodeB.AddNeighbor(nodeA);
+            //nodeB.AddNeighbor(nodeC);
+            //nodeB.AddNeighbor(nodeD);
+            //nodeB.AddNeighbor(nodeE);
+            //nodeC.AddNeighbor(nodeA);
+            //nodeC.AddNeighbor(nodeB);
+            //nodeC.AddNeighbor(nodeD);
+            //nodeC.AddNeighbor(nodeE);
+            //nodeD.AddNeighbor(nodeB);
+            //nodeD.AddNeighbor(nodeC);
+            //nodeD.AddNeighbor(nodeE);
+            //nodeE.AddNeighbor(nodeB);
+            //nodeE.AddNeighbor(nodeC);
+            //nodeE.AddNeighbor(nodeD);
+            //var graph = new GraphNode[] { nodeA, nodeB, nodeC, nodeD, nodeE };
+            ////string[] colors = new string[] { "red", "green", "yellow","black" };
+            //GraphNode.ColorGraph(graph, GraphNode.GetColors());
+            #endregion
+            #region shortest path
+          var network =  new Dictionary<string, string[]>
+                {
+                    { "a", new string[] { "b", "c", "d"} },
+                    { "b", new string[] { "a", "d" } },
+                    { "c", new string[] { "a", "e" } },
+                    { "d", new string[] { "a", "b" } },
+                    { "e", new string[] { "c" } },
+                    { "f", new string[] { "g" } },
+                    { "g", new string[] { "f" } }
+                };
 
-            GraphNode.ColorGraph(graph, GraphNode.GetColors());
+            MeshMessage.BfsGetPath(network, "d", "c");
+            #endregion
             Parser cd = new Parser();
             var num = "UserName:admin;Password: super % ^&*333password;DNSName: SomeName;TimeToLive: 4;ClusterSize: 2;PortNumber: 2222;IsEnabled: true;EnsureTransaction: false;PersistentStorage: false; ";
             cd.Parse(num);

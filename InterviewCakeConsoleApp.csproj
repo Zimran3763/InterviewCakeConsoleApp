@@ -55,6 +55,7 @@
     <Compile Include="InPlaceShuffle.cs" />
     <Compile Include="MergeMeetings.cs" />
     <Compile Include="MergeSortedArrays.cs" />
+    <Compile Include="MeshMessage.cs" />
     <Compile Include="NodeBounds.cs" />
     <Compile Include="NodeDepthPair.cs" />
     <Compile Include="PermutationPalindrome.cs" />

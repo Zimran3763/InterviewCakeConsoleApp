@@ -79,26 +79,34 @@ namespace InterviewCakeConsoleApp
             int flightLength = 7;
             InflightEntertainment.CanTwoMoviesFillFlight(movieLength, flightLength);
             #endregion
+
             #region Permutation Palindrome
             var result = PermutationPalindrome.HasPalindromePermutation("aabcbcd");
             #endregion
+
+            #region word cloud data
             var text = "Dessert - mille-feuille cake? Allie's Bakery: Sasha's Cakes decisions..dessert dessert Yum!";
             //WordCloudData.GetWords(text).ForEach(Console.WriteLine);
             //Console.WriteLine(String.Join(" ", WordCloudData.GetWords(text)));
             WordCloudData wordCloudData = new WordCloudData(text);
-            #region word cloud data
-
             #endregion
 
-            int[] originalArray = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            InPlaceShuffle.Shuffle(originalArray);
+            #region In-place Shuffle 
+            //int[] originalArray = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //InPlaceShuffle.Shuffle(originalArray);
+            #endregion
 
-            string[] words = new string[] { "ptolemaic", "retrograde", "supplant", "undulate", "xenoepist",
-            "asymptote", "babka", "banoffee", "engender", "karpatka", "othellolagkage" };
-            FindRotationPont.FindRotationPoint(words);
+            #region Find Rotation Point
+            //string[] words = new string[] { "ptolemaic", "retrograde", "supplant", "undulate", "xenoepist",
+            //"asymptote", "babka", "banoffee", "engender", "karpatka", "othellolagkage" };
+            //FindRotationPont.FindRotationPoint(words);
+            #endregion
 
-            var numbers = new int[] { 4, 1, 4, 8, 3, 2, 7, 6, 5 };
-            FindRepeatSpaceEdition.FindRepeat(numbers);
+            #region Find Repeat Space Edition
+            //var numbers = new int[] { 4, 1, 4, 8, 3, 2, 7, 6, 5 };
+            //FindRepeatSpaceEdition.FindRepeat(numbers);
+            #endregion
+
             #region Balanced Tree
             //var root = new BinaryTreeNode(1);
             //var a = root.InsertLeft(2);
@@ -124,7 +132,8 @@ namespace InterviewCakeConsoleApp
             //b.InsertRight(90);
             //var resultBinary= NodeBounds.IsBinarySearchTree(root);
             #endregion
-            #region
+
+            #region second largest node
             //var root = new BinaryTreeNode(50);
             //var a = root.InsertLeft(30);
             //a.InsertLeft(10);
@@ -132,6 +141,7 @@ namespace InterviewCakeConsoleApp
             //root.InsertRight(70).InsertLeft(60);
             //var actual = FindSecondLargestNode.FindSecondLargest(root);
             #endregion
+
             #region legal coloring
             //var nodeA = new GraphNode("A");
             //var nodeB = new GraphNode("B");
@@ -158,20 +168,27 @@ namespace InterviewCakeConsoleApp
             ////string[] colors = new string[] { "red", "green", "yellow","black" };
             //GraphNode.ColorGraph(graph, GraphNode.GetColors());
             #endregion
-            #region shortest path
-          var network =  new Dictionary<string, string[]>
-                {
-                    { "a", new string[] { "b", "c", "d"} },
-                    { "b", new string[] { "a", "d" } },
-                    { "c", new string[] { "a", "e" } },
-                    { "d", new string[] { "a", "b" } },
-                    { "e", new string[] { "c" } },
-                    { "f", new string[] { "g" } },
-                    { "g", new string[] { "f" } }
-                };
 
-            MeshMessage.BfsGetPath(network, "d", "c");
+            #region shortest path
+            //var network =  new Dictionary<string, string[]>
+            //      {
+            //          { "a", new string[] { "b", "c", "d"} },
+            //          { "b", new string[] { "a", "d" } },
+            //          { "c", new string[] { "a", "e" } },
+            //          { "d", new string[] { "a", "b" } },
+            //          { "e", new string[] { "c" } },
+            //          { "f", new string[] { "g" } },
+            //          { "g", new string[] { "f" } }
+            //      };
+
+            //  MeshMessage.BfsGetPath(network, "d", "c");
             #endregion
+
+            #region Find Duplicate BeastMOde
+            var numbers = new int[] { 4, 1, 4, 8, 3, 2, 7, 6, 5 };
+            FindDuplicateOptimizeForSpaceBeastMode.FindDuplicate(numbers);
+            #endregion
+
             Parser cd = new Parser();
             var num = "UserName:admin;Password: super % ^&*333password;DNSName: SomeName;TimeToLive: 4;ClusterSize: 2;PortNumber: 2222;IsEnabled: true;EnsureTransaction: false;PersistentStorage: false; ";
             cd.Parse(num);

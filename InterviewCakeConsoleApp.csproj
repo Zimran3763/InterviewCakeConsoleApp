@@ -47,6 +47,7 @@
     <Compile Include="BinaryTreeNode.cs" />
     <Compile Include="CafeOrderChecker.cs" />
     <Compile Include="Codelity.cs" />
+    <Compile Include="FindDuplicateOptimizeForSpaceBeastMode.cs" />
     <Compile Include="FindRepeatSpaceEdition.cs" />
     <Compile Include="FindRotationPont.cs" />
     <Compile Include="FindSecondLargestNode.cs" />

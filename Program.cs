@@ -185,10 +185,17 @@ namespace InterviewCakeConsoleApp
             #endregion
 
             #region Find Duplicate BeastMOde
-            var numbers = new int[] { 4, 1, 4, 8, 3, 2, 7, 6, 5 };
-            FindDuplicateOptimizeForSpaceBeastMode.FindDuplicate(numbers);
+            //var numbers = new int[] { 4, 1, 4, 8, 3, 2, 7, 6, 5 };
+            //FindDuplicateOptimizeForSpaceBeastMode.FindDuplicate(numbers);
             #endregion
 
+            #region Recursive permutation String
+            //var actual = RecursiveStringPermutation.GetPermutations("abca");
+            #endregion
+
+            #region Compute Fib
+            var actual = ComputeFib.Fib(5);
+            #endregion
             Parser cd = new Parser();
             var num = "UserName:admin;Password: super % ^&*333password;DNSName: SomeName;TimeToLive: 4;ClusterSize: 2;PortNumber: 2222;IsEnabled: true;EnsureTransaction: false;PersistentStorage: false; ";
             cd.Parse(num);

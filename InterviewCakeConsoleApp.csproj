@@ -47,6 +47,7 @@
     <Compile Include="BinaryTreeNode.cs" />
     <Compile Include="CafeOrderChecker.cs" />
     <Compile Include="Codelity.cs" />
+    <Compile Include="ComputeFib.cs" />
     <Compile Include="FindDuplicateOptimizeForSpaceBeastMode.cs" />
     <Compile Include="FindRepeatSpaceEdition.cs" />
     <Compile Include="FindRotationPont.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="ProductOfAllOtherNumbers.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecursiveStringPermutation.cs" />
     <Compile Include="ReverseStringInPlace.cs" />
     <Compile Include="ReverseWords.cs" />
     <Compile Include="TopScore.cs" />

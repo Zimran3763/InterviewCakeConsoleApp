@@ -196,6 +196,10 @@ namespace InterviewCakeConsoleApp
             #region Compute Fib
             var actual = ComputeFib.Fib(5);
             #endregion
+
+            #region Making Change
+            MakingChange.ChangePossibilitiesBottomUp(5, new int[] { 1, 3, 5 });
+            #endregion
             Parser cd = new Parser();
             var num = "UserName:admin;Password: super % ^&*333password;DNSName: SomeName;TimeToLive: 4;ClusterSize: 2;PortNumber: 2222;IsEnabled: true;EnsureTransaction: false;PersistentStorage: false; ";
             cd.Parse(num);

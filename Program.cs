@@ -222,6 +222,18 @@ namespace InterviewCakeConsoleApp
             s.Push(7);
             s.Push(8);
             #endregion
+
+            #region Two Stack Queue
+            var q = new QueueTwoStacks();
+            q.Enqueue(1);
+            q.Enqueue(2);
+            q.Enqueue(3);
+            q.Dequeue();
+            q.Dequeue();
+            q.Enqueue(4);
+            q.Dequeue();
+            q.Dequeue();
+            #endregion
             Parser cd = new Parser();
             var num = "UserName:admin;Password: super % ^&*333password;DNSName: SomeName;TimeToLive: 4;ClusterSize: 2;PortNumber: 2222;IsEnabled: true;EnsureTransaction: false;PersistentStorage: false; ";
             cd.Parse(num);

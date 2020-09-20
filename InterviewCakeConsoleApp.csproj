@@ -57,6 +57,7 @@
     <Compile Include="HighestProductOf3.cs" />
     <Compile Include="InPlaceShuffle.cs" />
     <Compile Include="MakingChange.cs" />
+    <Compile Include="MaxStack.cs" />
     <Compile Include="MergeMeetings.cs" />
     <Compile Include="MergeSortedArrays.cs" />
     <Compile Include="MeshMessage.cs" />

@@ -211,6 +211,17 @@ namespace InterviewCakeConsoleApp
            
             CakeType.MaxDuffelBagValue(cakeTypes, weightCapacity);
             #endregion
+
+            #region MaxStack
+            var s = new MaxStack();
+            s.Push(5);
+            s.Push(4);
+            s.Pop();
+            s.Push(7);
+            s.GetMax();
+            s.Push(7);
+            s.Push(8);
+            #endregion
             Parser cd = new Parser();
             var num = "UserName:admin;Password: super % ^&*333password;DNSName: SomeName;TimeToLive: 4;ClusterSize: 2;PortNumber: 2222;IsEnabled: true;EnsureTransaction: false;PersistentStorage: false; ";
             cd.Parse(num);

@@ -200,6 +200,17 @@ namespace InterviewCakeConsoleApp
             #region Making Change
             MakingChange.ChangePossibilitiesBottomUp(8, new int[] { 1, 4, 2, 8 });
             #endregion
+
+            #region CakeType
+            CakeType.CakeType1[] cakeTypes = new[]
+            {
+                new CakeType.CakeType1(2, 3), new CakeType.CakeType1(3, 6), new CakeType.CakeType1(5, 1),
+                new CakeType.CakeType1(6, 1), new CakeType.CakeType1(7, 1), new CakeType.CakeType1(8, 1)
+            };
+            var weightCapacity = 7;
+           
+            CakeType.MaxDuffelBagValue(cakeTypes, weightCapacity);
+            #endregion
             Parser cd = new Parser();
             var num = "UserName:admin;Password: super % ^&*333password;DNSName: SomeName;TimeToLive: 4;ClusterSize: 2;PortNumber: 2222;IsEnabled: true;EnsureTransaction: false;PersistentStorage: false; ";
             cd.Parse(num);

@@ -46,6 +46,7 @@
     <Compile Include="AppleStocks.cs" />
     <Compile Include="BinaryTreeNode.cs" />
     <Compile Include="CafeOrderChecker.cs" />
+    <Compile Include="CakeType.cs" />
     <Compile Include="Codelity.cs" />
     <Compile Include="ComputeFib.cs" />
     <Compile Include="FindDuplicateOptimizeForSpaceBeastMode.cs" />

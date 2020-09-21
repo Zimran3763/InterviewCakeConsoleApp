@@ -234,6 +234,10 @@ namespace InterviewCakeConsoleApp
             q.Dequeue();
             q.Dequeue();
             #endregion
+
+            #region Parenthesis Matching
+            ParenthesisMatching.GetClosingParen("((((()))))", 2);
+            #endregion
             Parser cd = new Parser();
             var num = "UserName:admin;Password: super % ^&*333password;DNSName: SomeName;TimeToLive: 4;ClusterSize: 2;PortNumber: 2222;IsEnabled: true;EnsureTransaction: false;PersistentStorage: false; ";
             cd.Parse(num);

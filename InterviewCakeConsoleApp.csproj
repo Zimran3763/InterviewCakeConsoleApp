@@ -63,6 +63,7 @@
     <Compile Include="MeshMessage.cs" />
     <Compile Include="NodeBounds.cs" />
     <Compile Include="NodeDepthPair.cs" />
+    <Compile Include="ParenthesisMatching.cs" />
     <Compile Include="PermutationPalindrome.cs" />
     <Compile Include="ProductOfAllOtherNumbers.cs" />
     <Compile Include="Program.cs" />

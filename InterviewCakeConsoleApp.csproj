@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AppleStocks.cs" />
     <Compile Include="BinaryTreeNode.cs" />
+    <Compile Include="BracketValidator.cs" />
     <Compile Include="CafeOrderChecker.cs" />
     <Compile Include="CakeType.cs" />
     <Compile Include="Codelity.cs" />

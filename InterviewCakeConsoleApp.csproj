@@ -50,6 +50,7 @@
     <Compile Include="CakeType.cs" />
     <Compile Include="Codelity.cs" />
     <Compile Include="ComputeFib.cs" />
+    <Compile Include="DeleteNode.cs" />
     <Compile Include="FindDuplicateOptimizeForSpaceBeastMode.cs" />
     <Compile Include="FindRepeatSpaceEdition.cs" />
     <Compile Include="FindRotationPont.cs" />

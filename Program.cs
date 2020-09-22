@@ -242,6 +242,18 @@ namespace InterviewCakeConsoleApp
             #region Bracket Validator
             BracketValidator.IsValid("[[]()");
             #endregion
+
+            #region Delete Node
+            var a = new LinkedListNode(1);
+            var b = new LinkedListNode(2);
+            var c = new LinkedListNode(3);
+
+            a.Next = b;
+            b.Next = c;
+
+            DeleteNode.DeleteNodeFromList(b);
+            #endregion
+
             Parser cd = new Parser();
             var num = "UserName:admin;Password: super % ^&*333password;DNSName: SomeName;TimeToLive: 4;ClusterSize: 2;PortNumber: 2222;IsEnabled: true;EnsureTransaction: false;PersistentStorage: false; ";
             cd.Parse(num);

@@ -254,6 +254,12 @@ namespace InterviewCakeConsoleApp
             DeleteNode.DeleteNodeFromList(b);
             #endregion
 
+            #region Does Singly linked list contain loop
+            var nodes = SinglyListContainsCycle.ValuesToLinkedListNodes(new int[] { 1, 2, 3, 4 });
+            nodes[3].Next = nodes[0];
+            SinglyListContainsCycle.ContainsCycle(nodes[0]);
+            #endregion
+
             Parser cd = new Parser();
             var num = "UserName:admin;Password: super % ^&*333password;DNSName: SomeName;TimeToLive: 4;ClusterSize: 2;PortNumber: 2222;IsEnabled: true;EnsureTransaction: false;PersistentStorage: false; ";
             cd.Parse(num);

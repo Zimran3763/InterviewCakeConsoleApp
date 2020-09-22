@@ -74,6 +74,7 @@
     <Compile Include="RecursiveStringPermutation.cs" />
     <Compile Include="ReverseStringInPlace.cs" />
     <Compile Include="ReverseWords.cs" />
+    <Compile Include="SinglyListContainsCycle.cs" />
     <Compile Include="TopScore.cs" />
     <Compile Include="WordCloudData.cs" />
   </ItemGroup>

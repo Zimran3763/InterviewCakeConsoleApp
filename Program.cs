@@ -264,6 +264,12 @@ namespace InterviewCakeConsoleApp
             var nodesLinkedList = SinglyListContainsCycle.ValuesToLinkedListNodes(new int[] { 1, 2, 3, 4, 5, 6 });
             ReverseALinkedList.Reverse(nodesLinkedList[0]);
             #endregion
+
+            #region KthNOde to Singly List
+            var listNodes = SinglyListContainsCycle.ValuesToLinkedListNodes(new int[] { 1, 2, 3, 4 });
+            var k = 3;
+            var r = kthNodeInSinglyList.KthToLastNode(k, listNodes[0]);
+            #endregion
             Parser cd = new Parser();
             var num = "UserName:admin;Password: super % ^&*333password;DNSName: SomeName;TimeToLive: 4;ClusterSize: 2;PortNumber: 2222;IsEnabled: true;EnsureTransaction: false;PersistentStorage: false; ";
             cd.Parse(num);

@@ -58,6 +58,7 @@
     <Compile Include="GraphNode.cs" />
     <Compile Include="HighestProductOf3.cs" />
     <Compile Include="InPlaceShuffle.cs" />
+    <Compile Include="kthNodeInSinglyList.cs" />
     <Compile Include="MakingChange.cs" />
     <Compile Include="MaxStack.cs" />
     <Compile Include="MergeMeetings.cs" />

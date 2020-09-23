@@ -32,10 +32,14 @@ namespace InterviewCakeConsoleApp
         }
         public static LinkedListNode[] ValuesToLinkedListNodes(int[] values)
         {
+            //this is LinkedList called as nodes
             var nodes = new LinkedListNode[values.Length];
             for (int i = 0; i < values.Length; i++)
             {
                 nodes[i] = new LinkedListNode(values[i]);
+                //you can not assign values[i] to node[i] because it will give error as nodes is linked kist instead of just an array where you can just assign value
+                //you need to assign next as well
+                //nodes[i] = values[i];
                 if (i > 0)
                 {
                     nodes[i - 1].Next = nodes[i];

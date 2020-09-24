@@ -72,6 +72,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueueTwoStacks.cs" />
+    <Compile Include="Rectangle.cs" />
     <Compile Include="RecursiveStringPermutation.cs" />
     <Compile Include="ReverseALinkedList.cs" />
     <Compile Include="ReverseStringInPlace.cs" />

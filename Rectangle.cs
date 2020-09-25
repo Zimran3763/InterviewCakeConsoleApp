@@ -24,38 +24,7 @@ namespace InterviewCakeConsoleApp
             Width = width;
             Height = height;
         }
-        public override string ToString()
-        {
-            return $"(left: {LeftX}, bottom: {BottomY},"
-                   + $" width: {Width}, height: {Height})";
-        }
-
-        public override bool Equals(Object obj)
-        {
-            if (obj == null || GetType() != obj.GetType())
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(obj, this))
-            {
-                return true;
-            }
-
-            var r = (Rectangle)obj;
-            return LeftX == r.LeftX && BottomY == r.BottomY
-                   && Width == r.Width && Height == r.Height;
-        }
-
-        public override int GetHashCode()
-        {
-            var result = 17;
-            result = result * 31 + LeftX;
-            result = result * 31 + BottomY;
-            result = result * 31 + Width;
-            result = result * 31 + Height;
-            return result;
-        }
+        
         public static Rectangle FindRectangularOverlap(Rectangle rect1, Rectangle rect2)
         {
             // Get the x and y overlap points and lengths

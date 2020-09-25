@@ -66,6 +66,7 @@
     <Compile Include="MeshMessage.cs" />
     <Compile Include="NodeBounds.cs" />
     <Compile Include="NodeDepthPair.cs" />
+    <Compile Include="OneDroneTest.cs" />
     <Compile Include="ParenthesisMatching.cs" />
     <Compile Include="PermutationPalindrome.cs" />
     <Compile Include="ProductOfAllOtherNumbers.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="ReverseStringInPlace.cs" />
     <Compile Include="ReverseWords.cs" />
     <Compile Include="SinglyListContainsCycle.cs" />
+    <Compile Include="TempChecker.cs" />
     <Compile Include="TopScore.cs" />
     <Compile Include="WordCloudData.cs" />
   </ItemGroup>

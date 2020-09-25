@@ -272,7 +272,22 @@ namespace InterviewCakeConsoleApp
             #endregion
 
             #region overlap ractangle
-            Rectangle.FindRectangularOverlap(new Rectangle(1, 1, 6, 3), new Rectangle(5, 2, 3, 6));
+            var rActual = Rectangle.FindRectangularOverlap(new Rectangle(1, 1, 6, 3), new Rectangle(5, 2, 3, 6));
+            #endregion
+
+            #region Temp Checker
+            var t = new TempChecker();
+            t.Insert(50);
+            t.Insert(80);
+            t.Insert(80);
+            t.Insert(30);
+            var max = t.GetMax();
+            var mean = t.GetMean();
+            var min = t.GetMin();
+            #endregion
+
+            #region the stolen breakfast drone
+
             #endregion
             Parser cd = new Parser();
             var num = "UserName:admin;Password: super % ^&*333password;DNSName: SomeName;TimeToLive: 4;ClusterSize: 2;PortNumber: 2222;IsEnabled: true;EnsureTransaction: false;PersistentStorage: false; ";

@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace InterviewCakeConsoleApp
 {
-    class OneDroneTest
+    public class OneDroneTest
     {
+        public static int FindUniqueDeliveryId(int[] deliveryIds)
+        {
+            int uniqueDeliveryId = 0;
+
+            foreach (int deliveryId in deliveryIds)
+            {
+                uniqueDeliveryId ^= deliveryId;
+            }
+
+            return uniqueDeliveryId;
+        }
     }
 }

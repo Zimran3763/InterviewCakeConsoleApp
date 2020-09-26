@@ -289,6 +289,10 @@ namespace InterviewCakeConsoleApp
             #region the stolen breakfast drone
             OneDroneTest.FindUniqueDeliveryId(new int[] { 2, 5, 4, 8, 6, 3, 1, 4, 2, 3, 6, 5, 1 });
             #endregion
+
+            #region which appears twice
+            WhichAppearsTwice.FindRepeat(new int[] { 4, 1, 3, 4, 2 });
+            #endregion
             Parser cd = new Parser();
             var num = "UserName:admin;Password: super % ^&*333password;DNSName: SomeName;TimeToLive: 4;ClusterSize: 2;PortNumber: 2222;IsEnabled: true;EnsureTransaction: false;PersistentStorage: false; ";
             cd.Parse(num);

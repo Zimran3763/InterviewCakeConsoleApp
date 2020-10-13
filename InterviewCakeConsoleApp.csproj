@@ -80,6 +80,7 @@
     <Compile Include="ReverseWords.cs" />
     <Compile Include="SinglyListContainsCycle.cs" />
     <Compile Include="TempChecker.cs" />
+    <Compile Include="TestClass.cs" />
     <Compile Include="TopScore.cs" />
     <Compile Include="whichAppearsTwice.cs" />
     <Compile Include="WordCloudData.cs" />

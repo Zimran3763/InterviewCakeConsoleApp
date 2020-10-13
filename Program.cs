@@ -9,7 +9,6 @@ namespace InterviewCakeConsoleApp
 {
     public class Program
     {
-
         public static void Main(string[] args)
         {
             #region Top Score
@@ -116,10 +115,10 @@ namespace InterviewCakeConsoleApp
             //b.InsertRight(6);
             //root.InsertRight(7).InsertRight(8).InsertRight(9).InsertRight(10);
 
-            //how this is false??
-            //var root = new BinaryTreeNode(1);
-            //root.InsertRight(2).InsertRight(3).InsertRight(4);
-            //var resultBalanced = NodeDepthPair.IsBalanced(root);
+            ////how this is false ??
+            var root = new BinaryTreeNode(1);
+            root.InsertRight(2).InsertRight(3).InsertRight(4);
+            var resultBalanced = NodeDepthPair.IsBalanced(root);
             #endregion
 
             #region BinaryTree
@@ -244,14 +243,14 @@ namespace InterviewCakeConsoleApp
             #endregion
 
             #region Delete Node
-            var a = new LinkedListNode(1);
-            var b = new LinkedListNode(2);
-            var c = new LinkedListNode(3);
+            var al = new LinkedListNode(1);
+            var bl = new LinkedListNode(2);
+            var cl = new LinkedListNode(3);
 
-            a.Next = b;
-            b.Next = c;
+            al.Next = bl;
+            bl.Next = cl;
 
-            DeleteNode.DeleteNodeFromList(b);
+            DeleteNode.DeleteNodeFromList(bl);
             #endregion
 
             #region Does Singly linked list contain loop
@@ -296,9 +295,32 @@ namespace InterviewCakeConsoleApp
             Parser cd = new Parser();
             var num = "UserName:admin;Password: super % ^&*333password;DNSName: SomeName;TimeToLive: 4;ClusterSize: 2;PortNumber: 2222;IsEnabled: true;EnsureTransaction: false;PersistentStorage: false; ";
             cd.Parse(num);
+              int iK = 10;
+              int j = 15;
+              TestClass.Print(ref iK , out j);
+            Account RobsAccount;
+            
+            RobsAccount = new Account();
+            RobsAccount.Name = "Rob";
+            Console.WriteLine(RobsAccount.Name);
+            Account Temp;
+            Temp = RobsAccount;
+            Temp.Name = "Jim";
+            Console.WriteLine(RobsAccount.Name);
+           
 
         }
     }
+
+    class Account
+    {
+        public string Name;
+    };
    
 
+
+
+
+
 }
+

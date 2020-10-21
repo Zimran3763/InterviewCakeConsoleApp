@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterviewCakeConsoleApp", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashingAndHashTables", "..\Hashing and hash tables\HashingAndHashTables.csproj", "{DBDC293C-0B00-43C8-80D3-BAD0774D3D98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon", "..\Amazon\Amazon.csproj", "{C3A0A0DC-519E-4FD8-A5BF-7598735D8DE4}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{DBDC293C-0B00-43C8-80D3-BAD0774D3D98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBDC293C-0B00-43C8-80D3-BAD0774D3D98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBDC293C-0B00-43C8-80D3-BAD0774D3D98}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C3A0A0DC-519E-4FD8-A5BF-7598735D8DE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C3A0A0DC-519E-4FD8-A5BF-7598735D8DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C3A0A0DC-519E-4FD8-A5BF-7598735D8DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C3A0A0DC-519E-4FD8-A5BF-7598735D8DE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -12,21 +12,25 @@ namespace InterviewCakeConsoleApp
         {
             LinkedListNode currentNode = headOfList;
             LinkedListNode previousNode = null;
-            LinkedListNode nextNode = null;
+            LinkedListNode tempNextNode = null;
 
             // Until we have 'fallen off' the end of the list
             while (currentNode != null)
             {
-                // Copy a pointer to the next element
-                // before we overwrite currentNode.Next
-                nextNode = currentNode.Next;
+                // Copy currenNodeNext value to a temp variable. So if we use change the value of current.next we would not loose original value
+                tempNextNode = currentNode.Next;
 
                 // Reverse the 'Next' pointer
+                //   1--->2 would be null<---1<---2
+                // so currentnode next which was pointing 2 now it's pointing to previous node which is null
                 currentNode.Next = previousNode;
 
                 // Step forward in the list
+                // now make current node previous node
                 previousNode = currentNode;
-                currentNode = nextNode;
+
+                //and use tempNext variable to make next node 2 as a current node
+                currentNode = tempNextNode;
             }
 
             return previousNode;
